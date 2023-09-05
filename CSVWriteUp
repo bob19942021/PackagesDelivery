@@ -1,0 +1,23 @@
+
+# to have and read the specific CSV files
+import csv
+
+# make a list to have and read the distance files when needed
+# Time-complexity: O(n)
+# Space-complexity: O(1)
+with open("CSV/distance.csv") as file:
+    distance_File = csv.reader(file)
+    distance_File = list(distance_File)
+
+# make a list to have and read the address files
+# Space-complexity: O(1) and Time-complexity: O(n)
+
+with open("CSV/address.csv") as file1:
+    address_File = csv.reader(file1)
+    address_File = list(address_File)
+
+# make a list to have and read the package files
+# Time-complexity: O(n) and Space-complexity: O(1)
+with open("CSV/package.csv") as file2:
+    package_File = csv.reader(file2)
+    package_File = list(package_File)
